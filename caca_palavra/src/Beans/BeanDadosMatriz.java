@@ -2,13 +2,15 @@ package Beans;
 
 /**
  * 
- * Bean para carregar as colunas de uma linha da mattriz(Diagrama)
+ * Classe para objetos BeanDadosMatriz, contendo métodos e valores para os mesmos
+ * utilizada para carregar as colunas de uma linha da mattriz(Diagrama)
  * 
- * @author "Alcélio Gomes {@link doalcelio@gmail.com}"
- * 
- * @since 16/04/2017
+ * @author Alcélio Gomes {@link doalcelio@gmail.com}
+ *
+ * @since 28 de ago de 2018
  *
  */
+
 public class BeanDadosMatriz {
 	
 	private String field_1 ="";
