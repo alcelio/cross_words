@@ -10,7 +10,6 @@ import com.relarorio.Relatorio;
 import Beans.BeanDadosMatriz;
 import Beans.BeanTamanhosMatriz;
 import Logger.ALogger;
-import Util.Globais;
 import customizados.MeuBotao;
 import customizados.MinhaLabel;
 import javafx.application.Application;
