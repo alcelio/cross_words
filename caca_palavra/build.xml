@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- WARNING: Eclipse auto-generated file.
+              Any modifications will be overwritten.
+              To include a user specific buildfile here, simply create one in the same
+              directory with the processing instruction <?eclipse.ant.import?>
+              as the first entry and export the buildfile again. --><project basedir="." default="build" name="caca_palavra">
+    <property environment="env"/>
+    <property name="ECLIPSE_HOME" value="../../../alcelio/eclipse/jee-neon2/eclipse/"/>
+    <property name="debuglevel" value="source,lines,vars"/>
+    <property name="target" value="1.8"/>
+    <property name="source" value="1.8"/>
+    <path id="Maven Dependencies.libraryclasspath">
+        <pathelement location="../../../alcelio/.m2/repository/log4j/log4j/1.2.17/log4j-1.2.17.jar"/>
+        <pathelement location="../../../alcelio/.m2/repository/org/apache/commons/commons-lang3/3.0/commons-lang3-3.0.jar"/>
+        <pathelement location="../../../alcelio/.m2/repository/net/sf/jasperreports/jasperreports/6.3.1/jasperreports-6.3.1.jar"/>
+        <pathelement location="../../../alcelio/.m2/repository/commons-beanutils/commons-beanutils/1.9.0/commons-beanutils-1.9.0.jar"/>
+        <pathelement location="../../../alcelio/.m2/repository/commons-collections/commons-collections/3.2.2/commons-collections-3.2.2.jar"/>
+        <pathelement location="../../../alcelio/.m2/repository/commons-digester/commons-digester/2.1/commons-digester-2.1.jar"/>
+        <pathelement location="../../../alcelio/.m2/repository/commons-logging/commons-logging/1.1.1/commons-logging-1.1.1.jar"/>
+        <pathelement location="../../../alcelio/.m2/repository/com/lowagie/itext/2.1.7.js5/itext-2.1.7.js5.jar"/>
+        <pathelement location="../../../alcelio/.m2/repository/bouncycastle/bcmail-jdk14/138/bcmail-jdk14-138.jar"/>
+        <pathelement location="../../../alcelio/.m2/repository/bouncycastle/bcprov-jdk14/138/bcprov-jdk14-138.jar"/>
+        <pathelement location="../../../alcelio/.m2/repository/org/bouncycastle/bctsp-jdk14/1.38/bctsp-jdk14-1.38.jar"/>
+        <pathelement location="../../../alcelio/.m2/repository/org/bouncycastle/bcprov-jdk14/1.38/bcprov-jdk14-1.38.jar"/>
+        <pathelement location="../../../alcelio/.m2/repository/org/bouncycastle/bcmail-jdk14/1.38/bcmail-jdk14-1.38.jar"/>
+        <pathelement location="../../../alcelio/.m2/repository/org/jfree/jcommon/1.0.23/jcommon-1.0.23.jar"/>
+        <pathelement location="../../../alcelio/.m2/repository/org/jfree/jfreechart/1.0.19/jfreechart-1.0.19.jar"/>
+        <pathelement location="../../../alcelio/.m2/repository/org/eclipse/jdt/core/compiler/ecj/4.3.1/ecj-4.3.1.jar"/>
+        <pathelement location="../../../alcelio/.m2/repository/org/codehaus/castor/castor-xml/1.3.3/castor-xml-1.3.3.jar"/>
+        <pathelement location="../../../alcelio/.m2/repository/org/codehaus/castor/castor-core/1.3.3/castor-core-1.3.3.jar"/>
+        <pathelement location="../../../alcelio/.m2/repository/commons-lang/commons-lang/2.6/commons-lang-2.6.jar"/>
+        <pathelement location="../../../alcelio/.m2/repository/javax/inject/javax.inject/1/javax.inject-1.jar"/>
+        <pathelement location="../../../alcelio/.m2/repository/stax/stax/1.2.0/stax-1.2.0.jar"/>
+        <pathelement location="../../../alcelio/.m2/repository/stax/stax-api/1.0.1/stax-api-1.0.1.jar"/>
+        <pathelement location="../../../alcelio/.m2/repository/javax/xml/stream/stax-api/1.0-2/stax-api-1.0-2.jar"/>
+        <pathelement location="../../../alcelio/.m2/repository/org/springframework/spring-context/3.0.6.RELEASE/spring-context-3.0.6.RELEASE.jar"/>
+        <pathelement location="../../../alcelio/.m2/repository/org/springframework/spring-aop/3.0.6.RELEASE/spring-aop-3.0.6.RELEASE.jar"/>
+        <pathelement location="../../../alcelio/.m2/repository/aopalliance/aopalliance/1.0/aopalliance-1.0.jar"/>
+        <pathelement location="../../../alcelio/.m2/repository/org/springframework/spring-beans/3.0.6.RELEASE/spring-beans-3.0.6.RELEASE.jar"/>
+        <pathelement location="../../../alcelio/.m2/repository/org/springframework/spring-core/3.0.6.RELEASE/spring-core-3.0.6.RELEASE.jar"/>
+        <pathelement location="../../../alcelio/.m2/repository/org/springframework/spring-expression/3.0.6.RELEASE/spring-expression-3.0.6.RELEASE.jar"/>
+        <pathelement location="../../../alcelio/.m2/repository/org/springframework/spring-asm/3.0.6.RELEASE/spring-asm-3.0.6.RELEASE.jar"/>
+        <pathelement location="../../../alcelio/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.1.4/jackson-core-2.1.4.jar"/>
+        <pathelement location="../../../alcelio/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.1.4/jackson-databind-2.1.4.jar"/>
+        <pathelement location="../../../alcelio/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.1.4/jackson-annotations-2.1.4.jar"/>
+        <pathelement location="../../../alcelio/.m2/repository/org/apache/lucene/lucene-core/4.5.1/lucene-core-4.5.1.jar"/>
+        <pathelement location="../../../alcelio/.m2/repository/org/apache/lucene/lucene-analyzers-common/4.5.1/lucene-analyzers-common-4.5.1.jar"/>
+        <pathelement location="../../../alcelio/.m2/repository/org/apache/lucene/lucene-queryparser/4.5.1/lucene-queryparser-4.5.1.jar"/>
+        <pathelement location="../../../alcelio/.m2/repository/org/apache/lucene/lucene-queries/4.5.1/lucene-queries-4.5.1.jar"/>
+        <pathelement location="../../../alcelio/.m2/repository/org/apache/lucene/lucene-sandbox/4.5.1/lucene-sandbox-4.5.1.jar"/>
+        <pathelement location="../../../alcelio/.m2/repository/jakarta-regexp/jakarta-regexp/1.4/jakarta-regexp-1.4.jar"/>
+        <pathelement location="../../../alcelio/.m2/repository/org/olap4j/olap4j/0.9.7.309-JS-3/olap4j-0.9.7.309-JS-3.jar"/>
+        <pathelement location="../../../alcelio/.m2/repository/com/google/zxing/core/3.2.1/core-3.2.1.jar"/>
+        <pathelement location="../../../alcelio/.m2/repository/com/ibm/icu/icu4j/57.1/icu4j-57.1.jar"/>
+    </path>
+    <path id="caca_palavra.classpath">
+        <pathelement location="target/classes"/>
+        <path refid="Maven Dependencies.libraryclasspath"/>
+    </path>
+    <path id="run.main.classpath">
+        <path refid="caca_palavra.classpath"/>
+        <path refid="Maven Dependencies.libraryclasspath"/>
+    </path>
+    <path id="run.MainStart.classpath">
+        <path refid="caca_palavra.classpath"/>
+        <path refid="Maven Dependencies.libraryclasspath"/>
+    </path>
+    <path id="run.TelaApresentaDiagrama.classpath">
+        <path refid="caca_palavra.classpath"/>
+        <path refid="Maven Dependencies.libraryclasspath"/>
+    </path>
+    <path id="run.Testador.classpath">
+        <path refid="caca_palavra.classpath"/>
+        <path refid="Maven Dependencies.libraryclasspath"/>
+    </path>
+    <path id="run.TelaApresentacao.classpath">
+        <path refid="caca_palavra.classpath"/>
+        <path refid="Maven Dependencies.libraryclasspath"/>
+    </path>
+    <path id="run.Main.classpath">
+        <path refid="caca_palavra.classpath"/>
+        <path refid="Maven Dependencies.libraryclasspath"/>
+    </path>
+    <target name="init">
+        <mkdir dir="target/classes"/>
+        <copy includeemptydirs="false" todir="target/classes">
+            <fileset dir="src">
+                <include name="**/*.java"/>
+                <exclude name="**/*.launch"/>
+                <exclude name="**/*.xtend"/>
+                <exclude name="**/*.java"/>
+            </fileset>
+        </copy>
+    </target>
+    <target name="clean">
+        <delete dir="target/classes"/>
+    </target>
+    <target depends="clean" name="cleanall"/>
+    <target depends="build-subprojects,build-project" name="build"/>
+    <target name="build-subprojects"/>
+    <target depends="init" name="build-project">
+        <echo message="${ant.project.name}: ${ant.file}"/>
+        <javac debug="true" debuglevel="${debuglevel}" destdir="target/classes" includeantruntime="false" source="${source}" target="${target}">
+            <src path="src"/>
+            <include name="**/*.java"/>
+            <classpath refid="caca_palavra.classpath"/>
+        </javac>
+    </target>
+    <target description="Build all projects which reference this project. Useful to propagate changes." name="build-refprojects"/>
+    <target description="copy Eclipse compiler jars to ant lib directory" name="init-eclipse-compiler">
+        <copy todir="${ant.library.dir}">
+            <fileset dir="${ECLIPSE_HOME}/plugins" includes="org.eclipse.jdt.core_*.jar"/>
+        </copy>
+        <unzip dest="${ant.library.dir}">
+            <patternset includes="jdtCompilerAdapter.jar"/>
+            <fileset dir="${ECLIPSE_HOME}/plugins" includes="org.eclipse.jdt.core_*.jar"/>
+        </unzip>
+    </target>
+    <target description="compile project with Eclipse compiler" name="build-eclipse-compiler">
+        <property name="build.compiler" value="org.eclipse.jdt.core.JDTCompilerAdapter"/>
+        <antcall target="build"/>
+    </target>
+    <target name="main">
+        <java classname="test.main" failonerror="true" fork="yes">
+            <classpath refid="run.main.classpath"/>
+        </java>
+    </target>
+    <target name="MainStart">
+        <java classname="telas.MainStart" failonerror="true" fork="yes">
+            <classpath refid="run.MainStart.classpath"/>
+        </java>
+    </target>
+    <target name="TelaApresentaDiagrama">
+        <java classname="telas.TelaApresentaDiagrama" failonerror="true" fork="yes">
+            <classpath refid="run.TelaApresentaDiagrama.classpath"/>
+        </java>
+    </target>
+    <target name="Testador">
+        <java classname="test.Testador" failonerror="true" fork="yes">
+            <classpath refid="run.Testador.classpath"/>
+        </java>
+    </target>
+    <target name="TelaApresentacao">
+        <java classname="telas.TelaApresentacao" failonerror="true" fork="yes">
+            <classpath refid="run.TelaApresentacao.classpath"/>
+        </java>
+    </target>
+    <target name="Main">
+        <java classname="telas.Main" failonerror="true" fork="yes">
+            <classpath refid="run.Main.classpath"/>
+        </java>
+    </target>
+</project>
