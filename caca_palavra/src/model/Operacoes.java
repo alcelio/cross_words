@@ -38,6 +38,9 @@ public class Operacoes {
 	
 	
 	public List<BeanDadosMatriz> formataParaImpressao(char[][] matriz) throws Exception{
+		
+		log.debug("Iniciando processo de formação para a impressão.");
+		
 		List<BeanDadosMatriz> listaDados = new ArrayList<>();
 		
 		BeanTamanhosMatriz tamanho = new BeanTamanhosMatriz(matriz);
@@ -147,7 +150,9 @@ public class Operacoes {
 				}
 				listaDados.add(bean);
 		}
-
+		
+		log.debug("Processo de formação de matriz para a impressão realizado com sucesso.");
+		
 		return listaDados;
 	}
 

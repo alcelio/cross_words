@@ -12,8 +12,8 @@ import org.apache.log4j.spi.LoggerFactory;
 
 
 /**
- * Gerenciador de Log, onde alï¿½m de registrar o log no console, todos os Logs
- * serï¿½o armazenados em um {@link ArrayList} para consulta e/ou exibiï¿½ï¿½o em tela
+ * Gerenciador de Log, onde além de registrar o log no console, todos os Logs
+ * serão armazenados em um {@link ArrayList} para consulta e/ou exibição em tela
  * 
  */
 public class ALogger {
@@ -42,7 +42,7 @@ public class ALogger {
 	}
 	
 	/**
-	 * Cria uma instï¿½cia do gerenciador de Logs
+	 * Cria uma instância do gerenciador de Logs
 	 * 
 	 * @param clazz
 	 * @return MLogger
@@ -54,7 +54,7 @@ public class ALogger {
 	}
 	
 	/**
-	 * Cria uma instÃ¢cia do gerenciador de Logs
+	 * Cria uma instância do gerenciador de Logs
 	 * 
 	 * @param name
 	 * @return MLogger
@@ -65,7 +65,7 @@ public class ALogger {
 	}
 	
 	/**
-	 * Cria uma instï¿½cia do gerenciador de Logs
+	 * Cria uma instância do gerenciador de Logs
 	 * 
 	 * @param name
 	 * @param factory
@@ -84,7 +84,7 @@ public class ALogger {
 	/**
 	 * Lista de logs registrados
 	 * 
-	 * @return Uma lista de {@link LoggerBean} com as informaï¿½ï¿½es de log
+	 * @return Uma lista de {@link LoggerBean} com as informações de log
 	 */
 	public static List<LoggerBean> getLogList() {
 		if (logList == null)
@@ -118,7 +118,7 @@ public class ALogger {
 	 * Inclui um novo Log na lista de logs
 	 * 
 	 * @param message
-	 *            Mensagem que serï¿½ incluï¿½da no log
+	 *            Mensagem que será incluída no log
 	 */
 	private void addLogger (LogType type, Object message) {
 		if (listLimit <= 0)

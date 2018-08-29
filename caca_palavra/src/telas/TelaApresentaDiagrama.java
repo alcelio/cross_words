@@ -327,18 +327,19 @@ public class TelaApresentaDiagrama extends Application {
 			log.error("Erro ao abrir tela de apresentação.", e);
 		}
 	}
-
+	/**
+	 * Método que efetua a impressão do diagrama
+	 *
+	 */
 	private void trataEventoBotaoGeraImpressaoDiagrama() {
 		List<BeanDadosMatriz> listaImpressao = new ArrayList<>();
-		//String dicas = Relatorio.getMapParametros().get(Globais.parametroObjetivo).toString();
 		try {
-			
+			log.debug("Iniciando processo de impressão de diagrama.");
 			listaImpressao = getOperacaoes().formataParaImpressao(mCompleta);
-			//TelaDadosCabelho.abreTelaDadosCabeclho(listaImpressao);
 			
 			Relatorio rel = new Relatorio();
 			rel.geraRelarotioCompleto(listaImpressao);
-
+			log.debug("Geração de impressão enviada para o sistema operacional com sucesso!");
 		} catch (Exception e) {
 			Alert alert = new Alert(AlertType.ERROR);
 			alert.setTitle("Ops...");
@@ -349,14 +350,19 @@ public class TelaApresentaDiagrama extends Application {
 		}
 
 	}
-
+	/**
+	 * Método que envia um diagrama de gabarito para a impressão.
+	 *
+	 */
 	private void trataEventoBotaoGeraImpressaoGabarito() {
 
 		List<BeanDadosMatriz> listaImpressao = new ArrayList<>();
 		try {
+			log.debug("Iniciando processo de impressão de gabarito.");
 			listaImpressao = getOperacaoes().formataParaImpressao(mGabaritoLimpa);
 			Relatorio rel = new Relatorio();
 			rel.geraRelarotioGabarito(listaImpressao);
+			log.debug("Geração de impressão enviada para o sistema operacional com sucesso!");
 		} catch (Exception e) {
 			Alert alert = new Alert(AlertType.ERROR);
 			alert.setTitle("Ops...");
@@ -365,7 +371,6 @@ public class TelaApresentaDiagrama extends Application {
 			alert.showAndWait();
 			log.error("Erro ao abrir tela de apresentação.", e);
 		}
-		
 		
 
 	}
